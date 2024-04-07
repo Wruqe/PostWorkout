@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 // Assuming you have supabase initialized and accessible in the file
-import supabase from '../helper/supabaseClient';
+import supabase from "../helper/supabaseClient";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [authError, setAuthError] = useState(null);
   const navigate = useNavigate(); // Initialize useHistory hook
 
@@ -30,7 +30,7 @@ function Login() {
       });
       if (error) throw error;
       // Redirect to home after successful sign-in
-      navigate('/home');
+      navigate("/home");
     } catch (error) {
       setAuthError(error.message);
     }
