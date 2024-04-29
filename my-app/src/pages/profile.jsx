@@ -25,4 +25,14 @@ export default function Home() {
     };
     fetchBlogs();
   }, []);
+  return (
+    <div>
+      <h1>Hello</h1>
+    </div>
+  )
+  
+    
 }
+
+
+
