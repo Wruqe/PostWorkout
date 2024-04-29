@@ -2,6 +2,7 @@ import Blog from "../components/blog";
 import { useState, useEffect } from "react";
 import supabase from "../helper/supabaseClient";
 import "../App.css"; // Import CSS file for styling
+import Navb from "../components/navbar";
 export default function Home() {
   const [user, setUser] = useState(null);
 
