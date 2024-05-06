@@ -45,18 +45,7 @@ export default function Home() {
         <Navb />
       </div>
 
-      <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedDay}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {/* modal content here */}
-          This is your workout:
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>Close</Button>
-        </Modal.Footer>
-      </Modal>
+    e
 
       <Card style={{ width: '47rem', height: '22rem',  marginTop: '20px'}}>
         <Card.Body >

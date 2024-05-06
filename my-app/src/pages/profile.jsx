@@ -2,8 +2,8 @@ import Blog from "../components/blog";
 import { useState, useEffect } from "react";
 import supabase from "../helper/supabaseClient";
 import "../App.css"; // Import CSS file for styling
-import Navb from "../components/navbar";
-export default function Home() {
+import { Route, Router } from "react-router-dom";
+export default function profile() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -26,10 +26,15 @@ export default function Home() {
     };
     fetchBlogs();
   }, []);
+
+
   return (
+    <><button id="home-btn">
+      Home
+    </button>
     <div>
       <h1>Hello</h1>
-    </div>
+    </div></>
   )
   
     
