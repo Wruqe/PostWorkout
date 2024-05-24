@@ -1,10 +1,6 @@
-import Blog from "../components/blog";
 import { useState, useEffect } from "react";
 import supabase from "../helper/supabaseClient";
-import "../App.css"; // Import CSS file for styling
-import "bootstrap/dist/css/bootstrap.min.css";
 import Navb from "../components/navbar";
-
 import { Card, Modal, Button } from 'react-bootstrap';
 
 export default function Home() {
@@ -45,9 +41,20 @@ export default function Home() {
         <Navb />
       </div>
 
-    e
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedDay}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {/* Add modal body content here */}
+          Your modal content goes here.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>Close</Button>
+        </Modal.Footer>
+      </Modal>
 
-      <Card style={{ width: '47rem', height: '22rem',  marginTop: '20px'}}>
+      <Card style={{ width: '47rem', height: '22rem', margin: 'auto', marginTop: '20px', marginLeft: '5px'}}>
         <Card.Body >
           <h1 className="body-text mt-5 text-center mb-4">Your Workouts:</h1>
           <div className="d-flex justify-content-between body-text h-50" style={{width: '700px', fontSize: '8px', cursor: 'pointer'}}>
@@ -60,7 +67,7 @@ export default function Home() {
         </Card.Body>
       </Card>
 
-      <div className="border p-4" style={{width: '47rem', height: '22rem',  marginTop: '20px'}}>
+      <div className="border p-4" style={{width: '47rem', height: '22rem', margin: 'auto', marginTop: '20px', marginLeft: '5px'}}>
         <h1 className="body-text text-center">Motivation:</h1>
       </div>
     </>
