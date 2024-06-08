@@ -1,0 +1,123 @@
+.homeicon {
+    height: 40px;
+    width: 40px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.profile-pic {
+    height: 215px;
+    width: 215px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 70px;
+    border: 5px solid black;
+    
+}
+.level {
+    font-family: Postworkout;
+    font-size: 20px;
+    margin-left: 140px;
+    margin-top: 20px;
+    position: absolute;
+}
+.level-bar {
+    width: 300px;
+    height: 30px;
+    border: 5px solid black;
+    margin-left: 25px;
+    margin-top: 45px;
+    position: absolute;
+}
+.profile-pic img {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    margin-left: -4px;
+    position: absolute;
+}
+.bio-stats {
+    height: 350px;
+    width: 300px;
+    border: 5px solid black;
+    margin-left: 25px;
+    margin-top: 100px;
+    border-radius: 20%;
+    text-align: center;
+    font-family: PostWorkout;
+    position: absolute;
+}
+.fourth-header {
+    font-size: 20px;
+    position: relative;
+}
+.second-header {
+    font-family: PostWorkout;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.workouts {
+    border: 5px solid black;
+    width: 900px;
+    margin-left: 400px;
+    top: 5%;
+    position: absolute;
+    height: 300px;
+    border-radius: 15px;
+}
+.add-workout {
+    margin-left: 730px;
+    margin-top: 100px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-family: PostWorkout;
+    position: absolute;
+}
+.goals {
+    border: 5px solid black;
+    margin-top: 150px;
+    margin-left: 400px;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    position: absolute;
+}
+.fifth-header {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: PostWorkout;
+}
+.goals-bar {
+    border: 3px solid black;
+    height: 30px;
+    margin-top: 45px;
+    margin-left: 5px;
+    width: 375px;
+    position: absolute;
+}
+.blog-posts {
+    margin-left: 875px;
+    margin-top: 150px;
+    border: 5px solid black;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+}
+.blogs-header {
+    font-family: PostWorkout;
+    display: flex;
+    justify-content: center;
+}
+.blogs-button {
+margin-top: 200px;
+background-color: black;
+color: white;
+margin-left: 150px;
+font-family: PostWorkout;
+border-radius: 15px;
+cursor: pointer;
+}
