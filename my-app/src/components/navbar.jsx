@@ -16,7 +16,7 @@ export default function Navb() {
           <Nav className="me-auto">
             <SearchBar />
           </Nav>
-          <Nav.Link className="body-text" href="#link">
+          <Nav.Link className="body-text" href="/profile">
             My profile <img className="Profile-Icon" src={profileIcon} alt="" />
           </Nav.Link>
         </Navbar.Collapse>

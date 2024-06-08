@@ -5,7 +5,7 @@ import Login from "./pages/login";
 import supabase from "./helper/supabaseClient";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import Profile from "./pages/profile";
 function App() {
   const [user, setUser] = useState(null);
 
@@ -46,6 +46,7 @@ function App() {
           {/* Route for login */}
           <Route path="/" element={<Login />} />
           {/* Route for home */}
+          <Route path="/profile" element={<Profile />} />
           <Route path="/home" element={<Home />} />
         </Routes>
       </BrowserRouter>

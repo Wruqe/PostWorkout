@@ -62,7 +62,9 @@ body,html,#master {
 }
 
 
-.me-2:focus {
-  outline: none; /* Remove the default blue outline */
-  box-shadow: 0 0 0 2px grey; /* Replace with a grey outline */
+
+
+.input-focus:focus {
+  outline: none; /* Removes the default outline */
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.5); /* Adds a red glow */
 }

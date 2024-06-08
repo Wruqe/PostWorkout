@@ -11,7 +11,7 @@ function SearchBar() {
   };
 
   return (
-    <Form className="d-flex" onSubmit={handleSearch}>
+    <Form className="d-flex body-text" onSubmit={handleSearch}>
       <FormControl
         type="search"
         placeholder="Search Users"
