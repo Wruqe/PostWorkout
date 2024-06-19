@@ -48,18 +48,13 @@ function Login() {
   };
 
   return (
-    <div>
-      <div className="circle top-left-circle"></div>
-
-      <Container fluid>
-        <Row className="min-vh-100">
-          <Col
-            md={6}
-            className="d-flex justify-content-center align-items-center"
-          >
+    <div className="min-h-screen flex">
+      <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex">
+          <div className="w-full md:w-1/2 flex justify-center items-center">
             <div>
               <div className="mb-5">
-                <h1 className="PostWorkout-Primary">
+                <h1 className="PostWorkout-Primary1">
                   Post <br />
                   Workout
                 </h1>
@@ -82,35 +77,20 @@ function Login() {
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
-              <button className="Primary-Button" onClick={signInWithEmail}>
-                login
-              </button>
-              <button className="Primary-Button" onClick={signUpNewUser}>
-                signup
-              </button>
+              <div className="flex space-x-4">
+                <button className="Primary-Button" onClick={signInWithEmail}>
+                  login
+                </button>
+                <button className="Primary-Button" onClick={signUpNewUser}>
+                  signup
+                </button>
+              </div>
               {authError && <p>{authError}</p>}
             </div>
-          </Col>
-
-          <Col md={6} className="p-0 position-relative">
-            <img
-              className="w-100 h-100 position-absolute"
-              src={MikeMentzer}
-              alt="Mike Mentzer"
-              style={{
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0,
-                objectFit: "cover",
-                objectPosition: "top center",
-              }}
-            />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
 export default Login;

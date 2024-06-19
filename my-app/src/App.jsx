@@ -6,6 +6,9 @@ import supabase from "./helper/supabaseClient";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Profile from "./pages/profile";
+import Navb from "./components/navbar";
+import Leaderboard from "./components/leaderboard";
+import Workouts from "./components/workouts";
 function App() {
   const [user, setUser] = useState(null);
 
@@ -37,18 +40,22 @@ function App() {
         pauseOnHover
       />
       <BrowserRouter>
-        <Routes>
-          {/* Redirect to home if user is logged in */}
-          {user ? (
-            <Route path="/" element={<Navigate to="/home" replace />} />
-          ) : null}
-
-          {/* Route for login */}
-          <Route path="/" element={<Login />} />
-          {/* Route for home */}
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/home" element={<Home />} />
-        </Routes>
+        <Navb />
+        <div className="pt-16">
+          {" "}
+          {/* Adjust this padding as needed */}
+          <Routes>
+            {user ? (
+              <Route path="/" element={<Navigate to="/home" replace />} />
+            ) : (
+              <Route path="/" element={<Login />} />
+            )}
+            <Route path="/home" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/recentWorkouts" element={<Workouts />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );

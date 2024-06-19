@@ -1,3 +1,9 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
 @font-face{
   font-family: Postworkout;
   src: url(MainFont.otf);
@@ -12,8 +18,13 @@ body,html,#master {
 .body-text{
   font-family: Postworkout;
   font-size: smaller;
+  color: black
 }
-
+.body-text-white{
+  font-family: Postworkout;
+  font-size: smaller;
+  color: white
+}
 .Profile-Icon {
   width: 20px; 
   height: auto; 
@@ -38,6 +49,11 @@ body,html,#master {
   font-family: Postworkout;
   margin-bottom: 10px;
 }
+.PostWorkout-Primary1{
+  font-family: Postworkout;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
 .NavPW{
   font-family: Postworkout;
 }
@@ -47,6 +63,17 @@ body,html,#master {
   font-family: Postworkout;
   background-color: black;
   color: white;
+  height: 25px;
+  width: 100px;
+
+}
+
+.Primary-Button2{
+  font-family: Postworkout;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 100px;
 
 }
 
@@ -57,8 +84,10 @@ body,html,#master {
 
 /* Login input */
 .Input-login{
-  width: 300px;
+  width: 310px;
   height: 40px;
+  background-color: white;
+  border: 1px solid black;
 }
 
 
